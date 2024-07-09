@@ -8,7 +8,7 @@
 plugins {
     // Apply the application plugin to add support for building a CLI application in Java.
     application
-    id("org.springframework.boot") version "2.4.2"
+    id("org.springframework.boot") version "2.7.18"
     id("io.spring.dependency-management") version "1.0.11.RELEASE"
     id("java")
 }
@@ -44,7 +44,7 @@ java {
 
 application {
     // Define the main class for the application.
-    mainClass.set("spring.batch.gradle.sample.App")
+    mainClass.set("spring.batch.gradle.sample.HelloApplication")
 }
 
 tasks.named<Test>("test") {
